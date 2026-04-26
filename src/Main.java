@@ -1,14 +1,13 @@
-public class main {
+public class Main {
     public static void main(String[] args) {
-        SistemaPagos sitema = new SistemaPagos();
+        SistemaPagos sistema = new SistemaPagos();
 
-        Estudiante e1 = new Estudiante("Juan", "123", "ingenieria", 3);
-        Estudiante e2 = new Estudiante("Ana", "134", "medicina", 2);
+        Estudiante e1 = new Estudiante("juan", "367", "ingenieria",3);
+        Estudiante e2 = new Estudiante("luna", "896", "medicina", 2);
 
-        sitema.registrarEsrudiante(e1);
-        sitema.registrarEsrudiante(e2);
+        sistema.registrarEsrudiante(e1);
+        sistema.registrarEsrudiante(e2);
 
-        sitema.registrarEsrudiante();
-
+        sistema.mostrarEstudiantes();
     }
 }
