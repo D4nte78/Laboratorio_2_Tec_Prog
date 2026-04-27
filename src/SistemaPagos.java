@@ -29,5 +29,20 @@ public class SistemaPagos {
 
     }// Permite registarr los datos de estudiantes, y lo guarda en la arraylist que se crea justo cuando se ejecuta la clase
     //SistemaPagos
+    public void registrarPagos(String Identificacion, Pago pago){
+
+        for (Estudiante e : estudiantes){
+
+            if (e.getIdentificacion().equals(Identificacion)) {
+                System.out.println("El estudiante si se encuentra registrado! ");
+                System.out.println("Guardando pago para el estudiante");
+                e.agregarPago(pago);
+                return;
+            }
+
+        }
+        System.out.println("Este id no esta registrado en el sistema. \n Revisa si esta bien digitado, o por el contrario si necesitas registrar el estudiante primero. ");
+
+    }
 }
 // Clase para revisar si una identificacion se repite --- Esta a medias

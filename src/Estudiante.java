@@ -17,6 +17,12 @@ public class Estudiante extends Persona  {
 
     }//Relleno de datos --- Se guarda id y nombre en persona, se crea la ArrayList para guardar pagos del estudiante
 
+    public void agregarPago(Pago pago){
+
+        pagos.add(pago);
+    }
+
+
     public String getPrograma() {
         return this.programa;
     }
