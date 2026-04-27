@@ -5,7 +5,8 @@ public class SistemaPagos {
     private ArrayList<Estudiante> estudiantes;
 
 
-    public void registrarEstudiante(String Identificiacion ,String Nombre ){
+    public void registrarEstudiante(String Identificacion ,String Nombre ){
 
     }
 }
+// Clase para revisar si una identificacion se repite --- Esta a medias
