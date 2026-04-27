@@ -1,4 +1,4 @@
-public class PagoEfectivo {
+public class PagoEfectivo extends Pago {
 
     public PagoEfectivo(double monto) {
         super();
