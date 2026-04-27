@@ -1,7 +1,7 @@
 public class PagoEfectivo extends Pago {
 
     public PagoEfectivo(double monto) {
-        super();
+        super(monto);
 
     }
 
