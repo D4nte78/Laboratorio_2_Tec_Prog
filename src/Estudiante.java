@@ -25,6 +25,6 @@ public class Estudiante extends Persona  {
         return this.semestre;
     }
 
-    public ArrayList<Pago> getPagos()
+    public ArrayList<Pago> getPagos(){return pagos;}
     //Obtencion de datos --- Getters para acceder a los atributos privados de la clase
 }

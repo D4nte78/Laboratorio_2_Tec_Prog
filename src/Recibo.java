@@ -2,7 +2,7 @@ import java.text.NumberFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class Recibo implements Imprimible3 {
+public class Recibo implements Imprimible {
 
     private Estudiante estudiante;
     private Pago pago;
@@ -14,7 +14,7 @@ public class Recibo implements Imprimible3 {
     }
 
     @Override
-    public void imprimirRecibo() {
+    public void imprimir() {
 
         NumberFormat formato = NumberFormat.getCurrencyInstance();
         DateTimeFormatter fechaFormato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
@@ -30,6 +30,7 @@ public class Recibo implements Imprimible3 {
 
         System.out.println("Fecha: " + LocalDate.now().format(fechaFormato));
         System.out.println("------------------------------");
-    }
+    }// Con polimorfismo, logramos usar la interfaz imprimible, y le indicamos lo que queremos imprimir, usamos una libreria para
+    // Lograr mostrar el tiempo actual
 }
 
