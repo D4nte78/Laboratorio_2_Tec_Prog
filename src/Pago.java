@@ -8,6 +8,5 @@ public abstract class Pago{
 
     public abstract double calcularTotal();
 
-    public String cañ() {
-    }
+
 }
