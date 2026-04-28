@@ -144,8 +144,24 @@ public class Main {
 
                     break;
 
-                case 4:
+                case 4: {
+
+                    System.out.println("Has entrado a consultar que ha recaudado la universidad \n ");
+
+                    System.out.println("A continuacion se mostrara todo lo recaudado por la universidad \n");
+
+
+                    System.out.println("Recaudado por todos los tipos \n");
+                    System.out.println("Todo lo recaudado: $"+sistema.totalRecaudado());
+
+                    System.out.println("Total recaudado por medio de Efectivo: $"+sistema.totalPorTipo("PagoEfectivo"));
+                    System.out.println("Total recaudado por medio de Tarjeta: $"+sistema.totalPorTipo("PagoTarjeta"));
+                    System.out.println("Total recaudado por medio de Transferencia: $"+sistema.totalPorTipo("PagoTransferencia"));
+                    System.out.println("Total recaudado por medio de Criptomoneda: $"+sistema.totalPorTipo("PagoCripto"));
+
+
                     break;
+                }
 
                 case 5:
                     System.out.println("Programa finalizado");

@@ -85,7 +85,7 @@ public class SistemaPagos {
 
                 if(p.getClass().getSimpleName().equals(tipo)){
 
-                    System.out.println("Sumando todo lo recaudado por el tipo de pago "+ tipo);
+
 
                     totalrecaudadotipo += p.calcularTotal();
                 }
