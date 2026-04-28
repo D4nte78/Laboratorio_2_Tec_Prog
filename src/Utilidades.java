@@ -1,15 +1,20 @@
-import java.util.ArrayList;
+public class Utilidades{
 
-public class Utilidades {
+    public static final double IVA = 0.19;
 
-    public static ArrayList<Double> calcularIVALista(ArrayList<Double> pagos) {
+    public static double calcularIVA(double monto) {
+        return monto * IVA;
+    }
 
-        ArrayList<Double> resultados = new ArrayList<>();
+    public static double calcularTotalConIVA(double monto) {
+        return monto + calcularIVA(monto);
+    }
 
-        for(double pago : pagos) {
-            resultados.add(pago * 0.19);
-        }
+    public static double convertirADolares(double pesos, double tasaCambio) {
+        return pesos / tasaCambio;
+    }
 
-        return resultados;
+    public static double convertirAPesos(double dolares, double tasaCambio) {
+        return dolares * tasaCambio;
     }
 }
